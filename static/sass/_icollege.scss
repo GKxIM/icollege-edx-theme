@@ -1,12 +1,12 @@
 /****************************************************************************************************
-*   Stanford Theming File
+*   Icollege Theming File
 *
-*   Contains all the theme color definitions for the Stanford Open Source MOOC Project
+*   Contains all the theme color definitions for the Icollege Open Source MOOC Project
 *
 ****************************************************************************************************/
 
 //-----------------
-//  Color variables (from Stanford palette unless noted)
+//  Color variables (from Icollege palette unless noted)
 //-----------------
 
 //Main Color Variables
@@ -270,3 +270,79 @@ section.tos {
         margin: 50px 0;
     }
 }
+
+//--------------------------------------------------------------------
+// Custom Styling
+//--------------------------------------------------------------------
+$white-color: #fff;
+
+$blue-color: #242247;
+$light-blue-color: #504e6c;
+
+$green-color: #9ffe00;
+$dark-green-color: #80cb00;
+
+$black-color: #181818;
+$light-black-color: #464646;
+
+label{
+    text-shadow: none;
+}
+
+a:link, a:visited{
+    color: $white-color;
+}
+
+//-----------------
+//header
+//-----------------
+header.global{
+    background: $blue-color;
+    border-bottom: none;
+
+    h1.logo a{
+        color: $white-color;
+    }
+
+    .nav-global{
+        li a, div a{
+            color: $white-color;
+            &:hover, &:focus, &:active{
+                color: $dark-green-color;
+            }
+        }
+    }
+
+    .primary > a{
+        border: none;
+        box-shadow: none;
+    }
+    .user > .primary:last-child > a{
+        padding-bottom: 10px;
+    }
+}
+
+.view-profile .profile-self .wrapper-profile-field-account-privacy,
+.wrapper-msg.urgency-high{
+    background: $light-blue-color;
+}
+
+.view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-title{
+    color: $white-color;
+}
+//-----------------
+//End header
+//-----------------
+
+
+//-----------------
+//footer
+//-----------------
+
+.wrapper-footer{
+    background: $black-color;
+}
+
+//-----------------
+//End footer
+//-----------------
