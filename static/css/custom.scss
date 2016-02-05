@@ -1,0 +1,270 @@
+.container-fluid:before, .container-fluid:after,
+.row:before, .row:after
+{
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+#content *,
+h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.text-right {
+  text-align: right;
+}
+//--------------------------------------------------------------------
+// Custom Styling
+//--------------------------------------------------------------------
+$white-color: #fff;
+
+$blue-color: #242247;
+$light-blue-color: #504e6c;
+
+$green-color: #9ffe00;
+$dark-green-color: #80cb00;
+
+$black-color: #181818;
+$light-black-color: #464646;
+
+$pink-color: #cb00c9;
+$red-color: #cb3414;
+
+label{
+    text-shadow: none;
+}
+
+a:link, a:visited{
+    color: $white-color;
+}
+
+p a:link, p a:visited{
+    color: $dark-green-color;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+p a:link:hover, p a:link:focus, p a:visited:hover, p a:visited:focus{
+    color: $pink-color;
+}
+
+#content{
+    ul li, ol li{
+        line-height: 1.6em;
+        margin-bottom: 6px;
+    }
+    h3, h4{
+        margin: 20px 0 6px 0;
+    }
+}
+
+.login-register{
+    .form-field{
+        input, select{
+            height: 36px;
+        }
+    }
+}
+
+.courses-container .courses .course{
+    border-color: $dark-green-color;
+}
+
+.highlighted-courses .courses .course:hover,
+.highlighted-courses .courses .course:focus,
+.find-courses .courses .course:hover,
+.find-courses .courses .course:focus{
+    border-color: $green-color;
+}
+//-----------------
+//header
+//-----------------
+.home{
+    .outer-wrapper{
+        .title{
+            border: none;
+            h2{
+                text-transform: none;
+                font-size: 22px;
+                font-weight: normal;
+            }
+        }
+    }    
+}
+
+header.global{
+    background: $blue-color;
+    border-bottom: none;
+
+    h1.logo a{
+        color: $white-color;
+    }
+
+    .nav-global{
+        li a, div a{
+            color: $white-color;
+            &:hover, &:focus, &:active{
+                color: $dark-green-color;
+            }
+        }
+    }
+
+    .primary > a{
+        border: none;
+        box-shadow: none;
+    }
+    .user > .primary:last-child > a{
+        padding-bottom: 10px;
+    }
+
+    .right.nav-courseware{
+        a.cta-login{
+            background: transparent;
+            border: 2px solid #fff;
+            &:focus, &:hover, &:active{
+                background: #fff;
+                color: $blue-color;
+            }
+        }
+    }
+}
+
+.view-profile .profile-self .wrapper-profile-field-account-privacy,
+.wrapper-msg.urgency-high{
+    background: $light-blue-color;
+}
+
+.view-profile .profile-self .wrapper-profile-field-account-privacy .u-field-title{
+    color: $white-color;
+}
+//-----------------
+//End header
+//-----------------
+
+//-----------------
+//About page
+//-----------------
+section.about{
+    #about-menu{
+        .about,
+        .contact{
+            text-transform: none;
+        }
+    }
+}
+#about, #contact{
+    .photo{
+        background: transparent;
+        border: none;
+        img{
+            background: transparent;
+        }
+    }
+}
+
+.home > header{
+    background: none !important;
+    border: none !important;
+}
+//-----------------
+//End About page
+//-----------------
+
+
+//-----------------
+//footer
+//-----------------
+.footer-extra{
+    background: $light-black-color;
+    .custom-row{
+        max-width: 1180px;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .footer-extra-menu{
+        li{
+            line-height: 1.8em;
+            a{
+                font-weight: bold;
+                &:hover, &:active, &:focus{
+                    color: $dark-green-color;
+                }
+            }
+        }
+    }
+
+    .extra-logo-box,
+    .extra-menu-box{
+        width: 50%;
+    }
+    .extra-logo-box{
+        float: left;
+        padding-top: 10px;
+    }
+    .extra-menu-box{
+        float: right;
+    }
+}
+
+.wrapper-footer{
+
+    background: $black-color;
+    padding: 5px 10px;
+    border-top: none;
+    .nav-colophon{
+        li{
+            color: $white-color;
+            margin-bottom: 0 !important;
+            line-height:35px;
+            span{
+                font-size: 0.8em;
+                color: $white-color;
+            }
+        }
+        a{
+            font-size: 0.8em;
+            &:hover, &:active, &:focus{
+                color: $dark-green-color;
+            }
+        }
+    }
+
+    .social-media{
+        a{
+            font-size: 2.2em;
+            &:hover, &:active, &:focus{
+                color: $dark-green-color;
+            }
+        }
+        .twitter-tw{
+            padding-right: 16px;
+        }
+    }
+}
+
+//-----------------
+//End footer
+//-----------------
